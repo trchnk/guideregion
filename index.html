@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guideregion: Sights of Almaty Region</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="sr-only" aria-label="Dark theme">
+
+  <header class="site-header">
+    <a class="logo" href="#top">Guideregion</a>
+    <input type="checkbox" id="menu-toggle" class="sr-only" aria-label="Open menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+    <nav class="main-nav" aria-label="Main navigation">
+      <form class="search" role="search" action="#">
+        <input type="search" name="q" placeholder="Search by location" aria-label="Search by location">
+      </form>
+      <ul>
+        <li><a href="#places">Top Places</a></li>
+        <li><a href="#route">Routes</a></li>
+        <li><a href="#footer">Tips for Tourists</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Discover the Amazing Places of Almaty Region</h1>
+      <p>Mountains, lakes, canyons, and ancient petroglyphs with routes for every adventure.</p>
+      <a class="cta" href="#route">Choose a tour</a>
+    </section>
+
+    <section id="places" class="places">
+      <h2>Top Places</h2>
+      <article>
+        <figure><img src="images/place1.webp" alt="Big Almaty Lake" width="400" height="300"></figure>
+        <h3>Big Almaty Lake</h3>
+        <p>A turquoise alpine lake situated at 2,511 meters altitude, surrounded by majestic mountain peaks.</p>
+        <p class="meta"><span class="tag">Hiking</span> <span>Expert rating: 4.9 / 5</span></p>
+      </article>
+      <article>
+        <figure><img src="images/place2.webp" alt="Charyn Canyon" width="400" height="300"></figure>
+        <h3>Charyn Canyon</h3>
+        <p>Dramatic red sandstone formations carved by wind and water in the famous Valley of Castles.</p>
+        <p class="meta"><span class="tag">4x4</span> <span>Expert rating: 4.8 / 5</span></p>
+      </article>
+      <article>
+        <figure><img src="images/place3.webp" alt="Kok-Zhailau Plateau" width="400" height="300"></figure>
+        <h3>Kok-Zhailau Plateau</h3>
+        <p>A scenic alpine meadow trail offering panoramic views over the valley and surrounding peaks.</p>
+        <p class="meta"><span class="tag">Hiking</span> <span>Expert rating: 4.7 / 5</span></p>
+      </article>
+      <article>
+        <figure><img src="images/place4.webp" alt="Tamgaly Petroglyphs" width="400" height="300"></figure>
+        <h3>Tamgaly Petroglyphs</h3>
+        <p>An ancient open-air sanctuary featuring thousands of Bronze Age rock carvings.</p>
+        <p class="meta"><span class="tag">4x4</span> <span>Expert rating: 4.6 / 5</span></p>
+      </article>
+      <article>
+        <figure><img src="images/place5.webp" alt="Singing Dune" width="400" height="300"></figure>
+        <h3>Singing Dune</h3>
+        <p>A massive sand dune in Altyn-Emel National Park that hums when the wind blows.</p>
+        <p class="meta"><span class="tag">4x4</span> <span>Expert rating: 4.7 / 5</span></p>
+      </article>
+      <article>
+        <figure><img src="images/place6.webp" alt="Ayusai Gorge Trail" width="400" height="300"></figure>
+        <h3>Ayusai Gorge Trail</h3>
+        <p>A refreshing forest walk along a mountain river leading to several picturesque waterfalls.</p>
+        <p class="meta"><span class="tag">Hiking</span> <span>Expert rating: 4.5 / 5</span></p>
+      </article>
+    </section>
+
+    <section id="route" class="route">
+      <h2>Plan your route</h2>
+      <p>Tell us about your trip. We will email you the map as a PDF.</p>
+      <form action="#" method="post">
+        <label>Duration (days)
+          <input type="number" name="days" min="1" max="30" required>
+        </label>
+        <label>Group Size
+          <input type="number" name="group" min="1" max="50" required>
+        </label>
+        <label>Phone for the guide
+          <input type="tel" name="phone" pattern="[+0-9 ()-]{7,20}" placeholder="+0 000 000 0000" required>
+        </label>
+        <label>Email for Sending the Map in PDF Format
+          <input type="email" name="email" placeholder="name@example.com" required>
+        </label>
+        <button type="submit">Get my route map</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <section>
+      <h2>Emergency</h2>
+      <address>
+        Rescue service: <a href="tel:112">112</a><br>
+        Mountain rescue: <a href="tel:+000000000">+0 000 000 000</a>
+      </address>
+    </section>
+    <section>
+      <h2>Certified guides</h2>
+      <ul>
+        <li><a href="#">Mountain guides</a></li>
+        <li><a href="#">Off-road drivers</a></li>
+        <li><a href="#">History guides</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Theme</h2>
+      <label for="theme-toggle" class="theme-btn">Switch light / dark</label>
+      <p><small>&copy; 2026 Guideregion. All rights reserved. Terms and Privacy Policy.</small></p>
+    </section>
+  </footer>
+</body>
+</html>
